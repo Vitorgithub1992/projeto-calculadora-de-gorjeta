@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de gorjeta</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div id="container">
+    <h1 id="title">Calculadora de gorjeta</h1>
+    <div>
+        <form id="tipeForm">
+            <label for="conta">Quanto ficou a conta?</label>
+            <p>R$ <input type="number" placeholder="20" id="conta" name="conta"></p>
+
+            <label for="service">
+                <p>Qual a qualidade do serviço prestado?</p>
+            </label>
+            <p>
+                <select name="service" id="service" class="selecionar">
+                    <option disabled selected value="0">- Selecione uma opção -</option>
+                    <option value="0.4">40% - Sensacional</option>
+                    <option value="0.3">30% - Incrível</option>
+                    <option value="0.2">20% - Bom</option>
+                    <option value="0.15">15% - Aceitável</option>
+                    <option value="0.10">10% - Ruim</option>
+                    <option value="0.05">05% - Péssimo</option>
+                </select>
+            </p>
+            <label for="people">
+                <p>Quantas pessoas vão dividir a conta?</p>
+            </label>
+            <p>
+                <input type="number" placeholder="Ex: 4" name="people" id="people" class="botao"> pessoa(s)
+            </p>
+
+            <p> 
+                <button type="submit" id="calcular" class="formSubmit">Calcular!</button>
+            </p>
+        </form>
+    </div>
+
+    <div id="total">
+        Gorjeta total:
+        R$ <span id="tip">0.00</span>
+        <p id="each">para cada.</p>
+    </div>
+
+    <script type="text/javascript" src="myjavascript.js"></script>
+    </body>
+</html>
